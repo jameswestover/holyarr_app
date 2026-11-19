@@ -60,10 +60,10 @@ public struct HolyButtonStyle: ButtonStyle {
     }
 
     public func makeBody(configuration: Configuration) -> some View {
-        Body(configuration: configuration, style: self)
+        StyledButton(configuration: configuration, style: self)
     }
 
-    private struct Body: View {
+    private struct StyledButton: View {
         let configuration: ButtonStyleConfiguration
         let style: HolyButtonStyle
         @Environment(\.isEnabled) private var isEnabled
