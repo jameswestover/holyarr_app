@@ -47,13 +47,13 @@ import Testing
     }
 
     @Test func typeScaleMatchesWeb() {
-        let expected: [TextStyle: CGFloat] = [
+        let expected: [HolyTextStyle: CGFloat] = [
             .largeTitle: 34, .title1: 28, .title2: 22, .title3: 19, .headline: 16,
             .body: 15, .callout: 14, .subhead: 13, .footnote: 12, .caption: 11,
         ]
         for (style, size) in expected { #expect(style.size == size) }
-        #expect(TextStyle.title1.weight == .bold)
-        #expect(TextStyle.caption.weight == .semibold)
+        #expect(HolyTextStyle.title1.weight == .bold)
+        #expect(HolyTextStyle.caption.weight == .semibold)
     }
 
     @Test func spacingIsOnFourPointGrid() {

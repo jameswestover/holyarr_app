@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// The web type scale (`tokens.css`), in Geist, scaled with Dynamic Type.
-public enum TextStyle: CaseIterable, Sendable {
+public enum HolyTextStyle: CaseIterable, Sendable {
     case hero, largeTitle, title1, title2, title3, headline, body, callout, subhead, footnote, caption
 
     public var size: CGFloat {
@@ -60,7 +60,7 @@ public enum TextStyle: CaseIterable, Sendable {
 
 public extension Font {
     /// Geist at a scale step, growing with Dynamic Type.
-    static func holy(_ style: TextStyle) -> Font {
+    static func holy(_ style: HolyTextStyle) -> Font {
         holy(size: style.size, weight: style.weight, relativeTo: style.relativeTo)
     }
 
@@ -82,7 +82,7 @@ public extension Font {
 
 public extension View {
     /// Applies a scale step: font plus the web's tracking.
-    func holyText(_ style: TextStyle) -> some View {
+    func holyText(_ style: HolyTextStyle) -> some View {
         font(.holy(style)).tracking(style.size * style.trackingEm)
     }
 }

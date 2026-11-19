@@ -70,7 +70,7 @@ struct DesignCatalogView: View {
 
     private var typeScale: some View {
         VStack(alignment: .leading, spacing: Space.x2) {
-            ForEach(TextStyle.allCases, id: \.self) { style in
+            ForEach(HolyTextStyle.allCases, id: \.self) { style in
                 Text("\(String(describing: style)) · \(Int(style.size))")
                     .holyText(style)
                     .foregroundStyle(Palette.text.color)
