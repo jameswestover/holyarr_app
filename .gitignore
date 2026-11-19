@@ -1,0 +1,17 @@
+# Xcode (the project is generated from project.yml)
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+build/
+HolyArrsApp/Info.plist
+
+# SwiftPM
+.build/
+.swiftpm/
+Package.resolved
+
+# Local signing
+Config/Signing.local.xcconfig
+
+.DS_Store

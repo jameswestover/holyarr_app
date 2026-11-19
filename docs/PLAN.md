@@ -2,7 +2,7 @@
 
 Companion to [SPEC.md](SPEC.md). Each milestone ends in a TestFlight-able build.
 
-## M0 — Foundations
+## M0 — Foundations ✅
 - Repo layout: `project.yml` (XcodeGen), `HolyArrsApp/`, `Packages/HolyArrsKit` (HolyAPI, HolyTheme, HolyFeatures), `.gitignore`, README with build steps.
 - `HolyTheme`: colour assets (light/dark), bundled Geist Variable, type scale, spacing/radius/motion constants, `HolyButton`, `StatusPill`, `EmptyState`, `Skeleton`, `Toast`.
 - App icon from `static/brand` source art.
