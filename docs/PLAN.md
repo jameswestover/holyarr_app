@@ -3,10 +3,10 @@
 Companion to [SPEC.md](SPEC.md). Each milestone ends in a TestFlight-able build.
 
 ## M0 — Foundations ✅
-- Repo layout: `project.yml` (XcodeGen), `HolyArrsApp/`, `Packages/HolyArrsKit` (HolyAPI, HolyTheme, HolyFeatures), `.gitignore`, README with build steps.
-- `HolyTheme`: colour assets (light/dark), bundled Geist Variable, type scale, spacing/radius/motion constants, `HolyButton`, `StatusPill`, `EmptyState`, `Skeleton`, `Toast`.
+- Repo layout: `project.yml` (XcodeGen), `HolyArrsApp/`, `Packages/HolyArrsKit` (HolyAPI, HolyTheme; HolyFeatures arrives with the first screens in M2), `.gitignore`, README with build steps.
+- `HolyTheme`: colour assets (light/dark), bundled Geist (static Regular/Medium/SemiBold/Bold), type scale, spacing/radius/motion constants, `HolyButton`, `StatusPill`, `EmptyState`, `Skeleton`, `Toast`.
 - App icon from `static/brand` source art.
-- GitHub Actions on `macos-latest`: `xcodegen` → build → `swift test` for the package.
+- GitHub Actions on `macos-15`: `swift test` for the package → `xcodegen` → simulator build.
 
 ## M1 — Connect & sign in
 - Connect screen + `GET /auth/state` validation, URL-base support, Local Network permission, `NSAllowsLocalNetworking`.
